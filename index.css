@@ -1,0 +1,235 @@
+body {
+	width: 90%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:6em;
+}
+a:link {
+  color:dodgerblue;
+}
+#contents {
+  line-height:1.5em;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+p {
+  text-align:justify;
+  text-indent:1em;
+}
+p.mid-flow, p.no-indent {
+  text-indent:0em;
+}
+h2 {
+  padding:0.5em 0em 0.5em 0.5em;
+  border-width:3px 0px 0px 0px;
+  border-style:solid;
+  border-color:silver;
+  width: fit-content;
+  padding-right: 1em;
+}
+h3 {
+  /*
+  padding:0.5em 0em 0.5em 0.5em;
+  border-width:2px 0px 0px 0px;
+  border-style:solid;
+  border-color:silver;
+  width:11.5em;
+  padding-right: 1em;
+  */
+  width: fit-content;
+}
+
+.warning {
+  font-size:1.5em;
+  font-weight: bold;
+  color:#ff0000;
+}
+.strong {
+  font-weight: bold;
+}
+img{
+  border:none;
+}
+.external:after {
+  content:url('link-icon_external.gif');
+}
+.close_item {
+  display:inline;
+}
+.close_item:after{
+  content:' /';
+}
+.last_close_item{
+  display:inline;
+}
+.nomark {
+  list-style-type:none;
+}
+.tag {
+  display:inline;
+  font-size:0.75em;
+}
+.tagtitle {
+  display:inline;
+  font-size:0.75em;
+  font-weight: bold;
+}
+blockquote {
+  border-style:solid;
+  border-width:1px;
+  border-color:silver;
+  padding:4px;
+}
+.footnote{
+  margin-left:4em;
+  margin-right:4em;
+  color:gray;
+  font-size:0.75em;
+}
+.mid-footnote{
+  font-size:0.75em;
+  color:gray;
+}
+.footer {
+  list-style-type:none;
+  line-height:1.5em;
+}
+.center {
+  text-align:center;
+}
+dt {
+	font-weight:bold;
+}
+li {
+	margin-bottom: 0.5em;
+}
+li > p:first-of-type {
+	margin-top:0em;
+}
+.image-mergin {
+  margin:1em;
+}
+.clear {
+  clear:both;
+}
+.after-clear::after {
+  clear:both;
+}
+.black {
+  color:black!important;
+}
+iframe {
+	width:34em;
+	/*height:9em;*/
+	height:auto;
+	border:none;
+}
+.red {
+	color:red;
+}
+.pink {
+	color:pink;
+}
+.gray {
+	color:gray;
+}
+span.link {
+  color:dodgerblue;
+}
+figcaption {
+	font-size: 0.7em;
+}
+div.caution {
+	background-color: #ffc8a7;
+	color: black;
+	border-radius: 10px;
+	padding-left:1em;
+	padding-right:1em;
+	border: 2px black solid;
+}
+blockquote.caution, blockquote.attention {
+	background-color: #ff9372;
+	color: black;
+	border-radius: 10px;
+	padding-left:1em;
+	padding-right:1em;
+}
+blockquote.code {
+	background-color:whitesmoke;
+	border-radius: 10px;
+	padding-left:1em;
+	padding-right:1em;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* メインコンテンツの幅を広げて画面を有効活用する */
+  #contents {
+    width: 95%;
+  }
+
+  /* 左右の浮き出し（float）を解除して縦並びにする */
+  div.right,
+  div.left {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center; /* 画像を中央に寄せる */
+  }
+
+  /* 512px固定だった幅を、画面いっぱいに広がるように変更 */
+  div.right > figure,
+  div.left > figure {
+    width: 100%;      /* 親要素に対して100%の幅にする */
+    max-width: 512px; /* 元のサイズより大きくならないように制限 */
+    margin: 1em 0;    /* 上下に少し隙間を作る */
+  }
+
+  /* YouTubeなどの動画も幅に合わせて調整 */
+  .youtube {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3; /* 元の 512:384 の比率を維持 */
+  }
+}
+
+.remove_top_margin {
+	margin-top:0em;
+}
+.remove_bottom_margin {
+	margin-bottom:0em;
+}
+.secret {
+    display: none;
+}
+
+.secret.is-visible {
+    display: block;
+}
+
+.secret-toggle {
+    display: inline-block;
+    cursor: pointer;
+    color: #c44;
+	font-weight:900;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.secret-toggle::before {
+    content: "▶ ";
+}
+
+.secret-toggle.is-visible::before {
+    content: "▼ ";
+}
+.remove {
+	display: none;
+}
+
+.icon-image {
+	width:64px;
+	height: 64px;
+	border-radius: 50%;
+}
