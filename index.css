@@ -233,3 +233,8 @@ blockquote.code {
 	height: 64px;
 	border-radius: 50%;
 }
+@scope (.youtube-player) {
+	iframe {
+		height:24em;
+	}
+}
