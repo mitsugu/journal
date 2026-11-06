@@ -224,7 +224,7 @@ blockquote.code {
 .secret-toggle.is-visible::before {
     content: "▼ ";
 }
-.remove {
+.remove, .trash {
 	display: none;
 }
 
