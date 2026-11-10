@@ -119,12 +119,6 @@ li > p:first-of-type {
 .black {
   color:black!important;
 }
-iframe {
-	width:34em;
-	/*height:9em;*/
-	height:auto;
-	border:none;
-}
 .red {
 	color:red;
 }
@@ -233,8 +227,13 @@ blockquote.code {
 	height: 64px;
 	border-radius: 50%;
 }
-@scope (.youtube-player) {
+@scope (.youtube) {
 	iframe {
 		height:24em;
+	}
+}
+@scope (.instagram) {
+	iframe {
+		height:34em;
 	}
 }
